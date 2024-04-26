@@ -1,24 +1,43 @@
 module.exports = [
     
     {
-      name: "Loffy",
+      name: "Dr.Anjali Arora",
       id: 0o111221113,
-      age: 20,
+      age: 27,
       gender: "Female",
-      email: "Loffy@gmail.com",
-      address: "Shanti hostel , Bhopal",
-      img: "https://images.unsplash.com/photo-1711894904366-4f6f7e8affea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWwlMjBwb3RyYWl0c3xlbnwwfHwwfHx8MA%3D%3D",
+      email: "anjaliarora@gmail.com",
+      qualification: "MBBS",
+      img: "https://i.pinimg.com/564x/01/1e/eb/011eeb8e35e997020e6e8cc70506c195.jpg",
     },
     
     {
-      name: "Ace",
+      name: "Dr.Raghuvanshi",
       id: 0o111221177,
-      age: 23,
-      gender: "Female",
-      email: "ace@gmail.com",
-      address: "One piece , Anime",
-      img: "https://images.unsplash.com/photo-1701357156569-65249e5c42fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI0fHxtb2RlbCUyMHBvdHJhaXRzfGVufDB8fDB8fHww",
+      age: 48,
+      gender: "male",
+      email: "raghuvanshiji@gmail.com",
+      qualification: "MD (Ophthalmology)",
+      img: "https://i.pinimg.com/564x/8c/a3/8c/8ca38c989e8bf6e17c13456702b62ee9.jpg",
+    },
+
+    {
+      name: "Dr.Gupta",
+      id: 0o111221165,
+      age: 32,
+      gender: "female",
+      email: "guptajii@gmail.com",
+      qualification: "MD (Dermatologist)",
+      img: "https://i.pinimg.com/564x/9d/32/ec/9d32ec35ffeb5fbe79df2593e90afb83.jpg",
     },
     
+    {
+      name: "Dr.Chouhan",
+      id: 0o111221165,
+      age: 38,
+      gender: "male",
+      email: "chouhanji@gmail.com",
+      qualification: "MD (Cardiologist)",
+      img: "https://i.pinimg.com/564x/f4/c9/ef/f4c9ef33d04a22050038e9e53eeb7d85.jpg",
+    },
   ];
   
