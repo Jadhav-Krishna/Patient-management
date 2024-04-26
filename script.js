@@ -10,11 +10,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
-
+//=============== Landing page ==============
 app.get("/",function(req,res){
     res.render("index")
 })
   
+//================= Login ================
 app.get("/login",function(req,res){
     res.render( "login" )
 })
@@ -28,20 +29,28 @@ app.post("/logindetails", (req, res) => {
     }
   });
 
+  
+// app.get("/detail",function(req,res){
+//     res.render( "detail" )
+// })
+
 // app.get("/doctor",function(req,res){
 //     res.render( "doctor" )
 // })
 
+
+//================ Doctor Detals ================
 // app.get("/doctorprofile", (req, res) => {
 //     res.render("doctorprofile", { data });
 //   });
-
 // app.get("/doctorprofile/:userid", (req, res) => {
 //     var user = data.find((val) => val.id === Number(req.params.userid));
 //     if (user) res.render("user", { user });
 //     else res.render("error");
 //   });
 
+
+//============== Server site =============
 app.listen("3000",() => {
     console.log("Server is now live....")
 })
