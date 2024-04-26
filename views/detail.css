@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image:url("desktop-wallpaper-medical-doctor-writing-prescription-on-white-isolated-backgrounds-medical-doctor-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.container{
+    display: flex;
+}
+
+.part1{
+    background-color:black
+    height: 80vh;
+    width: 20vw;
+    margin-left: 5vw;
+    border-radius: 2vw;
+    margin-top: 5vh;
+}
+
+.part2{
+    background-color: antiquewhite;
+    width: 60vw;
+    margin-left: 5vw;
+    border-radius: 2vw;
+    margin-top: 5vh;
+}
+
+.photo{
+    height: 20vh;
+    width: 12vw;
+    margin-left: 4vw;
+    margin-top: 2vh;
+    opacity: 2;
+    background-color: aqua;
+
+}
+
+.name,.Id,.sex{
+margin-left: 2vw;
+background-color:antiquewhite;
+width: 16vw;
+font-size: 2vw;
+margin-top: 5vh;
+}
+
+.pastdetail{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 2vh;
+    font-size: 4vh;
+}
+
+.text{
+    margin-top: 2vh;
+    height: 5vh;
+    margin-left: 2vw;
+    width:50vw;
+    font-size: 3vh;
+    background-color: antiquewhite;
+}
+
+.btn{
+    height:5vh;
+    width: 5vw;
+    font-size: 2vh;
+    background-color: rgb(51, 51, 206)
+}
+
+.new_list{
+    padding-left: 3vw;
+    padding-right: 3vh;
+    font-size: 1vw;
+    width: 60vw;
+    background-color: antiquewhite;
+}
