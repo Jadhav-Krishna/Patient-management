@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container,.container2{
+    background-color: #8FAEBF;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav{
+    background-color: #0F1441;
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: #3D6577;
+}
+
+.intro{
+    height: 50vh;
+    width: 30vw;
+    margin-left: 10vw;
+    padding-top: 20vh;
+    font-size: 2vw;
+
+}
+
+.tag{
+    text-align: center;
+    padding-top: 5vh;
+    color: #232323;
+}
+
+.sub{
+    font-size: 2.4vh;
+    padding-top: 5vh;
+    color: #313232;
+    padding-left: 5vw;
+}
+
+
+.part1{
+    margin-left: 55vw;
+    height: 70vh;
+    width: 30vw;
+    margin-top: -20vh;
+    background: url(https://www.zynxhealth.com/wp-content/uploads/2023/07/zynx-how-we-can-help-1.png) 50%;
+    border-radius: 55vh;
+}
+
+
+.container2{
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    height: 45vh;
+}
+
+.div1,.div2{
+    background-color:#8FAEBF;
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+}
+
+
+.parts1{
+    background-color:#8FAEBF;
+}
+
+.part1{
+    align-items: center;
+    display: flex;
+}
+
+.doc{
+    height: 45vh;
+    width: 50vw;
+}
+
+.container3{
+    background-color:#3D6577;
+    height: 45vh;
+    width: 100vw;
+    color: white;
+}
+
+.div2{
+    background-color:#3D6577;
+}
+
+.container1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+}
+
+.text{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+.parts3{
+    height: 90vh;
+    width: 50vw;
+    font-size: 3vh;
+    padding: 5vh;
+}
+
+.parts4{
+    height: 90vh;
+    width:50vw;
+}
+
+.photo{
+    height: 50vh;
+    width: 40vw;
+    padding-top: 10vh;
+}
+
+.container4{
+    height: 10vh;
+    width:100vw;
+    background-color: #0F1441;
+}
+
+.circle{
+    background-color: #232323;
+    z-index: 1;
+}
