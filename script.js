@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const data = require("./data");
+const patientdetails = require("./patientdetail")
 const fs = require('fs');
 const app = express();
 
@@ -17,6 +18,15 @@ app.get("/",function(req,res){
 app.get("/login",function(req,res){
     res.render( "login" )
 })
+app.post("/logindetails", (req, res) => {
+    if(req.body.username === "krishna" && req.body.password === "Radha123"){
+        let golu = patientdetails.find((pval) => pval.id === Number(req.body.patientid));
+        if (golu) res.render("logedin", {golu});
+        else res.render("error");
+    }else{
+        console.error("error")
+    }
+  });
 
 app.get("/doctor",function(req,res){
     res.render( "doctor" )
