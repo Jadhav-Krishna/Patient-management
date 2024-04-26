@@ -1,67 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div class="main h-screen w-full bg-red-500 relative">
-      <div
-        class="w-full h-screen bg-[url('https://plus.unsplash.com/premium_photo-1661559037040-4ebcab61c0be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGNhcmRpb2xvZ2lzdCUyMGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D')] bg-cover bg-top"
-      ></div>
-      <div class="w-full h-screen bg-green-800 absolute top-[0] opacity-60">
-        <div class="flex items-center justify-between px-24">
-          <div class="text-container mt-52 relative h-96 w-full py-4">
-            <h1 class="text-white font-lato font-md text-7xl">
-              Providing an exceptional <br />
-              patient experience
-            </h1>
-            <h3 class="text-white font-400 absolute top-52 w-full">
-              welcome where exceptional patient experiences are our priority ,
-              with compansate care ,srare <br />
-              of art facilities and a patient center centered approach we are
-              dedicated to our well being . <br />Trust us with your health and
-              experience the differnce
-            </h3>
-          </div>
-          <div class="w-[24%] h-96 bg-zinc-100 py-2 mt-52">
-            <h3 class="text-2xl px-7 text-green-900 font-bold py-4">
-              Book now
-            </h3>
-            <form
-              class="h-96 w-96 px-5 py-3 flex flex-col gap-6 rounded-lg"
-              method="post"
-              action="/logindetails"
-            >
-              <input
-                class="py-2 px-2 w-60 rounded-xl outline-none"
-                type="text"
-                placeholder="Username"
-                name="username"
-              />
-              <input
-                class="py-2 px-2 w-60 rounded-xl outline-none"
-                type="password"
-                placeholder="password"
-                name="password"
-              />
-              <input
-                class="py-2 px-2 w-60 rounded-xl outline-none"
-                type="text"
-                placeholder="Patient Id"
-                name="patientid"
-              />
-              <input
-                type="submit"
-                class="text-2xl w-60 text-green-900 font-sm bg-green-500 py-2 px-2 mt-8"
-                value="View Details"
-              />
-            </form>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<body>
+     <div id="main">
+        <div id="page2">
+            <h4>What We Do</h4>
+            <div class="line"></div>
+            <div class="container">
+                <div class="left">
+                    <h1>Our Approach to Give <br> Reliable  Solution</h1>
+                    <h3>We develop evidence-based solutions to guide <br> practitioners in making informed care decisions <br> shown to positively impact patient outcomes.</h3>
+                    <div class="text-container-1">
+                        <div class="top">
+                          <div class="imge-text">
+                            <img alt="wwd icon 01" data-src="https://www.zynxhealth.com/wp-content/uploads/2023/07/wwd-icon-01.svg" class=" lazyloaded" src="https://www.zynxhealth.com/wp-content/uploads/2023/07/wwd-icon-01.svg" loading="lazy">
+                            <h2>Our Expertise</h2>
+                          </div>
+                            <i class="ri-arrow-up-s-line"></i>
+                        </div>
+                        <p>Profound Medical Knowledge honed throw rigorous <br> education and experience .Exceptional diagnostic <br> abilities adept at identifying illness accurately clear <br> and effective communication with patient </p>
+                    </div>
+                    <div class="text-container-2">
+                        <div class="top">
+                          <div class="imge-text">
+                            <img alt="wwd icon 02" data-src="https://www.zynxhealth.com/wp-content/uploads/2023/07/wwd-icon-02.svg" class=" lazyloaded" src="https://www.zynxhealth.com/wp-content/uploads/2023/07/wwd-icon-02.svg" loading="lazy">
+                    <h2>Trusted ,Unbiased Support</h2>
+                          </div>
+                          <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                        <p>Profound Medical Knowledge honed throw rigorous <br> education and experience .Exceptional diagnostic <br> abilities adept at identifying illness accurately clear <br> and effective communication with patient </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="form-container">
+                       <form action="/logindetails" method="post">
+                        <h2>Book Now</h2>
+                        <input class="name" type="text" placeholder="Username" name="username">
+                        <input class="address" type="password" placeholder="password" name="password">
+                        <input class="phone" type="text" placeholder="Patient Id" name="patientid">
+                        <input class="submit" type="submit" value="View Details" >
+                       </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+     </div>
+      
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="/javascripts/login.js"></script>
+</body>
 </html>
