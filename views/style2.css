@@ -10,6 +10,9 @@
 body{
   background: #e1ecf2;
 }
+::selection{
+  color: rgb(203, 32, 131);
+}
 
 .wrapper{
   margin: 10px;

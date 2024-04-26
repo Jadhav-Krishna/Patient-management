@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      id="main"
+      class="h-screen w-full bg-zinc-400 flex items-center justify-center"
+    >
+      <div
+        id="card"
+        class="h-96 w-72 relative drop-shadow bg-zinc-300 rounded-2xl p-5 flex flex-col items-center justify-between"
+      >
+        <div id="circle" class="h-36 w-36 rounded-full overflow-hidden">
+          <img
+            class="w-full h-full object-cover"
+            src="<%= user.img %>"
+            alt=""
+          />
+        </div>
+        <h1 class="text-xl font-bold"><%= user.name %></h1>
+        <h5>id : <%= user.id %></h5>
+        <h5>age : <%= user.age %></h5>
+        <h5>gender : <%= user.gender %></h5>
+        <h5>email : <%= user.email %></h5>
+        <h5>address : <%= user.address %></h5>
+        <div class="px-7 py-2 rounded-full bg-yellow-300">
+          <a href="#">Booked!!!</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
