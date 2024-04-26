@@ -19,12 +19,13 @@ app.get("/login",function(req,res){
     res.render( "login" )
 })
 app.post("/logindetails", (req, res) => {
-    if(req.body.username === "krishna" && req.body.password === "Radha123"){
+    let username = req.body.username;
+    if(username === "Dr.Gupta" && req.body.password === "Guptaji"){
         let golu = patientdetails.find((pval) => pval.id === Number(req.body.patientid));
         if (golu) res.render("logedin", {golu});
         else res.render("error");
     }else{
-        console.error("error")
+        res.render("error");
     }
   });
 
