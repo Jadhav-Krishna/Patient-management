@@ -8,6 +8,7 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+<script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="/stylesheets/login.css">
 </head>
 <body>
@@ -42,11 +43,12 @@
                 </div>
                 <div class="right">
                     <div class="form-container">
-                       <form action="/logindetails" method="post">
+                       <form action="/logedin" method="post">
                         <h2>Book Now</h2>
                         <input class="name" type="text" placeholder="Username" name="username">
                         <input class="address" type="password" placeholder="password" name="password">
                         <input class="phone" type="text" placeholder="Patient Id" name="patientid">
+                        <!-- <h2 class="text-red"><%= wrong %></h2> -->
                         <input class="submit" type="submit" value="View Details" >
                        </form>
                     </div>

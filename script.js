@@ -19,7 +19,8 @@ app.get("/",function(req,res){
 app.get("/login",function(req,res){
     res.render( "login" )
 })
-app.post("/logindetails", (req, res) => {
+app.post("/logedin", (req, res) => {
+    let wrong = "Wrong username or password!";
     if(req.body.username === "Dr.Gupta" && req.body.password === "Gupta@123"){
         let golu = patientdetails.find((pval) => pval.id === Number(req.body.patientid));
         if (golu) res.render("logedin", {golu});
@@ -29,10 +30,15 @@ app.post("/logindetails", (req, res) => {
     }
   });
 
-  
-// app.get("/detail",function(req,res){
-//     res.render( "detail" )
+// app.get("/details",function(req,res){
+//     res.render( "details" )
 // })
+
+// app.post("/logindetails", (req, res) => {
+//     let xyz = req.body.newdata;
+//     // console.log(xyz);
+//     res.redirect("/logedin",{xyz})
+//   });
 
 // app.get("/doctor",function(req,res){
 //     res.render( "doctor" )

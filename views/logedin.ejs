@@ -7,11 +7,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div id="main" class="p-10 h-screen w-full bg-zinc-500">
+    <!-- <div id="main" class="p-10 h-screen w-full bg-zinc-500">
         <h1><%= golu.id %></h1>
         <h1><%= golu.name %></h1>
         <h1><%= golu.bimari %></h1>
         <h1><%= golu.gender %></h1>
+    </div> -->
+    <div class="container">
+        <div class="part1">
+            <div class="photo"><img src="<%= golu.photo %>" alt="nahi aaya photo"></div>
+            <div class="Id" name="Id">Id= <%= golu.id %></div>
+            <div class="name" name="name">Name= <%= golu.name %></div>
+            <div class="age" name="age">age= <%= golu.age %></div>
+            <div class="sex" name="sex">sex= <%= golu.gender %></div>
+        </div>
+
+        <div class="part2">
+            <form action="/logindetails" method="post">
+                <div class="pastdetail">previous History</div>
+                <div class="list">
+                </div>
+                <input type="text" class="text" name="newdata" placeholder="Data may not be changed !!!">
+                <input type="submit" value="Add Details">
+            </form>
+        </div>
+
     </div>
+    <script src="detaillogic.js"></script>
 </body>
 </html>
