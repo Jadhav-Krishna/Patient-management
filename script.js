@@ -46,15 +46,15 @@ app.post("/logedin", (req, res) => {
 //     res.render( "doctor" )
 // })
 
-//================ Doctor Detals ================
-// app.get("/doctorprofile", (req, res) => {
-//     res.render("doctorprofile", { data });
-//   });
-// app.get("/doctorprofile/:userid", (req, res) => {
-//     var user = data.find((val) => val.id === Number(req.params.userid));
-//     if (user) res.render("user", { user });
-//     else res.render("error");
-//   });
+// ================ Doctor Detals ================
+app.get("/doctorprofile", (req, res) => {
+    res.render("doctorprofile", { data });
+  });
+app.get("/doctorprofile/:userid", (req, res) => {
+    var user = data.find((val) => val.id === Number(req.params.userid));
+    if (user) res.render("user", { user });
+    else res.render("error");
+  });
 
 //============== Server site =============
 app.listen("3000",() => {

@@ -16,7 +16,7 @@ module.exports = [
       age: 48,
       gender: "male",
       email: "raghuvanshiji@gmail.com",
-      qualification: "MD (Ophthalmology)",
+      qualification: "MD (Surgeon)",
       img: "https://i.pinimg.com/564x/8c/a3/8c/8ca38c989e8bf6e17c13456702b62ee9.jpg",
     },
 
