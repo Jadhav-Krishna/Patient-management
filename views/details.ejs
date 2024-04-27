@@ -5,26 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>details</title>
     <link rel="stylesheet" href="stylesheets/detail.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <div class="container">
         <div class="part1">
-            <div class="photo"></div>
-            <div class="name" name="name">Name=</div>
-            <div class="Id" name="Id">Id=</div>
-            <div class="sex" name="sex">sex=</div>
+            <div class="h-42 w-42 rounded-full overflow-hidden">
+                <img src="<%= golu.photo %>" alt="">
+            </div>
+            <div class="name" name="name">Name : <%= golu.name %></div>
+            <div class="Id" name="Id">Id : <%= golu.id %></div>
+            <div class="sex" name="sex">sex : <%= golu.gender %></div>
         </div>
 
         <div class="part2">
             <div class="pastdetail">previous History</div>
             <div class="list">
                 
+                    2010 : ekwfdbnqkwk wfdhqwop;lf uowephfjnwe4k owpegjflmdc owpheogflm;d <br>
+                    2012 : wfgchoewib wer9 yc43498 34r uf dbj q3[ 3 ijfweiuk] <br>
+                    2024 : fy toyu8erxc uuyr 98oi l8yjhj  5etrf t u8ilg 7g <br>
+                
             </div>
-            <input type="text" class="text">
-            <button class="btn">Add</button>
+          
+                <input type="text"  placeholder="Changes may not be reversed !!!" name="text" class="text">
+                <!-- <input type="submit" value="Add"> -->
+                <button class="btn">Add</button>
+            
         </div>
 
     </div>
-    <script src="detaillogic.js"></script>
+    <script src="/javascripts/detaillogic.js"></script>
 </body>
 </html>

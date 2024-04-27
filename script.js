@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const data = require("./data");
+const final = require("./final");
 const patientdetails = require("./patientdetail")
 const fs = require('fs');
 const app = express();
@@ -24,7 +25,7 @@ app.post("/logedin", (req, res) => {
     let golufiledata = [];
     if(req.body.username === "Dr.Gupta" && req.body.password === "Gupta@123"){
         let golu = patientdetails.find((pval) => pval.id === Number(req.body.patientid));
-        if (golu) res.render("logedin", {golu});
+        if (golu) res.render("details", {golu});
         else res.redirect("/login");
     }else{
         res.redirect("/login");
@@ -32,8 +33,14 @@ app.post("/logedin", (req, res) => {
     
 });
 
-// app.get("/details",function(req,res){
-//     res.render( "details" )
+app.get("/details",function(req,res){
+    res.render( "details",{final});
+})
+
+// app.get("/lolo",function(req,res){
+//     let text = req.body.text;
+//     res.render( "/lolo",{tag:req.params});
+//     res.redirect("/details")
 // })
 
 // app.post("/logindetails", (req, res) => {

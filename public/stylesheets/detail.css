@@ -23,6 +23,7 @@
 .part2{
     background-color: antiquewhite;
     width: 60vw;
+    padding: 5%;
     margin-left: 5vw;
     border-radius: 2vw;
     margin-top: 5vh;
@@ -41,11 +42,14 @@
 .name,.Id,.sex{
 margin-left: 2vw;
 background-color:antiquewhite;
-width: 16vw;
+width: 20vw;
 font-size: 2vw;
 margin-top: 5vh;
 }
-
+.part2 p{
+    margin-top: 3vh;
+    font-size: 22px;
+}
 .pastdetail{
     text-align: center;
     background-color: antiquewhite;
@@ -54,12 +58,15 @@ margin-top: 5vh;
 }
 
 .text{
-    margin-top: 2vh;
+    margin-top: 5vh;
     height: 5vh;
     margin-left: 2vw;
     width:50vw;
     font-size: 3vh;
-    background-color: antiquewhite;
+    background-color: rgb(138, 134, 130);
+}
+input{
+    background-color: black;
 }
 
 .btn{
