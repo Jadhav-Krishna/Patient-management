@@ -13,5 +13,8 @@ let list = document.querySelector(".list")
 // })
 
 btn.addEventListener("click",function(){
-    console.log("hey")
+    let new_ele=document.createElement("ul")
+        new_ele.innerHTML=`<div class="new_list">${text.value}`;
+        list.appendChild(new_ele);
+      
 })

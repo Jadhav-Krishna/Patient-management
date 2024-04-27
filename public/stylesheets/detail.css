@@ -60,8 +60,8 @@ margin-top: 5vh;
 .text{
     margin-top: 5vh;
     height: 5vh;
-    margin-left: 2vw;
-    width:50vw;
+    margin-left: 1vw;
+    width:45vw;
     font-size: 3vh;
     background-color: rgb(138, 134, 130);
 }
@@ -80,6 +80,7 @@ input{
     padding-left: 3vw;
     padding-right: 3vh;
     font-size: 1vw;
-    width: 60vw;
+ 
+    height: 2VW;
     background-color: antiquewhite;
 }
