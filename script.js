@@ -20,7 +20,8 @@ app.get("/login",function(req,res){
     res.render( "login" )
 })
 app.post("/logedin", (req, res) => {
-    let wrong = "Wrong username or password!";
+    // let wrong = "Wrong username or password!";
+    let golufiledata = [];
     if(req.body.username === "Dr.Gupta" && req.body.password === "Gupta@123"){
         let golu = patientdetails.find((pval) => pval.id === Number(req.body.patientid));
         if (golu) res.render("logedin", {golu});
@@ -28,7 +29,8 @@ app.post("/logedin", (req, res) => {
     }else{
         res.redirect("/login");
     }
-  });
+    
+});
 
 // app.get("/details",function(req,res){
 //     res.render( "details" )
@@ -44,7 +46,6 @@ app.post("/logedin", (req, res) => {
 //     res.render( "doctor" )
 // })
 
-
 //================ Doctor Detals ================
 // app.get("/doctorprofile", (req, res) => {
 //     res.render("doctorprofile", { data });
@@ -54,7 +55,6 @@ app.post("/logedin", (req, res) => {
 //     if (user) res.render("user", { user });
 //     else res.render("error");
 //   });
-
 
 //============== Server site =============
 app.listen("3000",() => {
