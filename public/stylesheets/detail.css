@@ -73,6 +73,7 @@ input{
     height:5vh;
     width: 5vw;
     font-size: 2vh;
+    border-radius: 20px;
     background-color: rgb(51, 51, 206)
 }
 
